@@ -53,3 +53,8 @@ Then, run the following command to get inference results.
 ```
 python inference.py
 ```
+
+## Misc
+An example plot from `inference.py`
+
+![A figure for SVM](plot.png)
