@@ -1,6 +1,6 @@
 # Support Vector Machine in PyTorch
 
-This repository implement SVM from scratch using PyTorch. Currently we only have the simple Linear-SVM implementation, will consider add SVM with kernel in the future. 
+This repository implements SVM from scratch using PyTorch. Currently we only have the simple Linear-SVM implementation, will consider add SVM with kernel in the future. 
 
 We understand SVM is effectively implemented by `scikit-learn` and other well-known libraries. 
 This project is mainly for the purpose of self-understanding of SVM and an attempt for building it from scratch using PyTorch. 
@@ -27,7 +27,7 @@ cat_two = 'Iris-versicolor' # Will be labelled -1
 ```
 Hence the model will only use `SepalLengthCm` and `PetalLengthCm` as inputs (so the input is 2-dimensional), then output the category as either `Iris-setosa` or `Iris-versicolor`.
 Also note that the dataset will automatically ignore `Iris-virginica` under this setting. 
-You can investigate `Iris.csv` in our repository for detailed understanding. 
+You can investigate `Iris.csv` for detailed understanding. 
 
 ## Training
 

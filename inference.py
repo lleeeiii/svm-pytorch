@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from model import SVM, HingeLoss
 from dataloader import Loader
-
 def process_dataset(csv_file, input_cols, output_col, cat_one, cat_two):
     df = pd.read_csv(csv_file)
     # Filter columns on input and output columns only.
@@ -15,7 +14,6 @@ def process_dataset(csv_file, input_cols, output_col, cat_one, cat_two):
     df[output_col+'Label'] = df[output_col].apply(lambda s: 1 if s == cat_one else -1)
     df = df.drop(output_col, axis=1)
     return df
-
 def visualize_separator(model, df):
     model.eval()
     linear = model.linear
